@@ -13,7 +13,9 @@ export function Pokemon({ pokemon }) {
         <img src={pokemon.image} alt={pokemon.name} />
       </div>
       <div className="pokemon__attacks">
-        {pokemon.attacks.special.map((item) => item.name + ' ')}
+        {pokemon.attacks.special.slice(0, 3).map((item) => (
+          <span key={item.name - item.damage}>{item.name} </span>
+        ))}
       </div>
     </div>
   )
