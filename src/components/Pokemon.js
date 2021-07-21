@@ -14,7 +14,7 @@ export function Pokemon({ pokemon }) {
       </div>
       <div className="pokemon__attacks">
         {pokemon.attacks.special.slice(0, 3).map((item) => (
-          <span key={item.name - item.damage}>{item.name} </span>
+          <span key={`${item.name} - ${item.damage}`}>{item.name} </span>
         ))}
       </div>
     </div>
