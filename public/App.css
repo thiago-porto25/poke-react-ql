@@ -24,7 +24,7 @@ body {
 
 .container {
   display: flex;
-  max-width: 550px;
+  max-width: 800px;
   margin: auto;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -35,7 +35,7 @@ body {
 }
 
 .container .pokemon {
-  width: 49%;
+  width: 33%;
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
