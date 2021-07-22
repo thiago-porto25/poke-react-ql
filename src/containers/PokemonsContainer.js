@@ -28,13 +28,16 @@ export function PokemonsContainer() {
 
   return (
     <>
-      <input
-        className="search"
-        value={searchTerm}
-        type="text"
-        placeholder="Search a Pokemon..."
-        onChange={({ target }) => setSearchTerm(target.value)}
-      />
+      <div className="searchContainer">
+        <input
+          className="search"
+          value={searchTerm}
+          type="text"
+          placeholder="Search a Pokemon..."
+          onChange={({ target }) => setSearchTerm(target.value)}
+        />
+      </div>
+
       <div className="container">
         {pokeList &&
           pokeList.map((pokemon) => (
