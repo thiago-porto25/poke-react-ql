@@ -7,7 +7,7 @@ import Fuse from 'fuse.js'
 
 export function PokemonsContainer() {
   const { data: { pokemons = [] } = {} } = useQuery(GET_POKEMONS, {
-    variables: { first: 50 },
+    variables: { first: 151 },
   })
   const [pokeList, setPokeList] = useState([])
   const [searchTerm, setSearchTerm] = useState('')

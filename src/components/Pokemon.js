@@ -7,7 +7,8 @@ export function Pokemon({ pokemon }) {
         <p>{pokemon.name}</p>
       </div>
       <div className="pokemon__meta">
-        <span>{pokemon.maxHP}</span> <span>{pokemon.maxCP}</span>
+        <span>HP: {pokemon.maxHP}</span>
+        <span>CP: {pokemon.maxCP}</span>
       </div>
       <div className="pokemon__image">
         <img src={pokemon.image} alt={pokemon.name} />
