@@ -22,6 +22,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.headerContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Pokemon', sans-serif;
+}
+
+.headerContainer h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  margin-top: 5px;
+  color: #203ff1;
+  -webkit-text-fill-color: #ecd018;
+  -webkit-text-stroke-color: #203ff1;
+  -webkit-text-stroke-width: 3px;
+}
+
 .container {
   display: flex;
   max-width: 800px;
@@ -115,7 +134,7 @@ body {
 .searchContainer {
   width: 100%;
   height: auto;
-  margin: 20px 0px 20px 0px;
+  margin: 20px 0px 30px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,17 +145,17 @@ body {
   background-color: #ecd018;
   color: rgb(0, 0, 0);
   border: none;
-  height: 40px;
+  height: 50px;
   font-size: 20px;
   padding: 10px;
   width: 30%;
-  min-width: 100px;
+  min-width: 300px;
   outline: none;
 }
 
-.search:focus {
+.search:focus,
+.search:hover {
   box-shadow: 0px 0px 10px #ecd018;
-  border: 2px solid rgba(0, 0, 0, 0.027);
 }
 
 @media (max-width: 800px) {
